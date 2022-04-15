@@ -101,6 +101,22 @@ def output(pred, score, close):
     output = json.dumps(dictionary, indent=4)
     return output
 
+import argparse
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--N", type=int, required=True, help="top N meals")
+    parser.add_argument("--ingredient", action='append', type=str, required=True,
+                        help="list of ingredients")
+
+    args = parser.parse_args()
+    dframe =read_data('yummly.json')
+    ingredients = convert_string(dframe.ingredients, args.ingredient)
+    matrix = document_matrix(ingredients)
+    cuisine, score = predict_cuisine(dframe, matrix, args.ingredient)
+    similar = similarity(dframe, matrix, args.N)
+    print(output(cuisine, score, similar))
 
 
 
