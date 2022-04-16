@@ -30,9 +30,9 @@ def test_similarity():
     df['cuisine']=['southern us','Asian','French']
     df['ingredients']=data
     df['id']=[9944,10250,3560]
-    print(df.index.size)
     sim=p.similarity(df,matrix,1)
     assert len(sim)!=None
+    assert type(sim)==list
 
 def test_predict_cuisine():
     df=pd.DataFrame()
