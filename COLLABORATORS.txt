@@ -1,0 +1,2 @@
+The craft of data | To understand the dataset and preprocessing data | https://thecraftofdata.com/2019/03/making-food-recommendations-by-analyzing-cuisines-and-ingredients
+towardsdatascience.com | Because of this article got to know how to find score of the closest cuisine  | https://towardsdatascience.com/predict-vs-predict-proba-scikit-learn-bdc45daa5972#:~:text=The%20predict_proba()%20method,probabilities%20for%20each%20data%20point.
