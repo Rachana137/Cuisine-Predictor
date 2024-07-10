@@ -1,9 +1,6 @@
-# Cs5293sp22-project2
-
-## Cuisine Predictor
+# Cuisine Predictor
 
 ### RACHANA VELLAMPALLI
-### rachana@ou.edu
 
 The goal of this project is to create applications that take a list of ingredients from a user and attempts to predict the type of cuisine and similar meals. And Consider a chef who has a list of ingredients and would like to change the current meal without changing the ingredients. 
 
@@ -33,7 +30,6 @@ from sklearn.linear_model import LogisticRegression
 > 6. Return output in json format.
 
 
-## Project2.py
 This file contains the funtions to perfom all the steps required.
 1. **read_data(path)**
 
